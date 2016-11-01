@@ -24,7 +24,7 @@
     <%= f.label :image %><br>
     <%= f.file_field :image %>
     <% if f.object.image? %>
-      <%= image_tag f.thumb %>
+      <%= image_tag f.object.thumb %>
       <%= f.label :remove_image %>
       <%= f.check_box :remove_image %> 
     <% end %>
